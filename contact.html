@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta charset="utf-8" />
+
+		<script
+			src="https://kit.fontawesome.com/8e616065cd.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link type="text/css" rel="stylesheet" href="css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="css/general.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+
+        <link type="text/css" rel="stylesheet" href="css/contact.css" />
+		<script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+		<style>
+			#nav div:nth-of-type(1) {
+				border-color: #011627;
+			}
+			#nav div:nth-of-type(1) ion-icon {
+				color: #011627;
+			}
+		</style>
+		<title>getLinkedAI - Contact</title>
+	</head>
+	<body>
+		<div id="landing">
+			<nav>
+                <div class="circle"><a class="returnButton fa-solid fa-chevron-left" href="index.html"></a></div>
+
+				<table id="navTable">
+					<tr>
+						<td id="navLogo">
+							<h1>
+								<span>get</span><span class="purpleLight">linked</span>
+							</h1>
+						</td>
+
+						<td id="headerText"><span><a href="index.html#timeline">Timeline</a></span></td>
+						<td id="headerText"><span><a href="#">Overview</a></span></td>
+						<td id="headerText"><span><a href="index.html#faq">FAQs</a></span></td>
+						<td id="headerText">
+							<span
+								style="
+									background-image: linear-gradient(
+										to right,
+										#903aff,
+										#ff26b9
+									);
+									-webkit-background-clip: text;
+									background-clip: text;
+									-webkit-text-fill-color: transparent;
+								"
+								><a href="contact.html">Contact</a></span
+							>
+						</td>
+						<td id="navButton">
+							<button class="register"><a href="register.html">Register</a></button>
+						</td>
+						<td id="menu">
+							<img src="images/Vector.svg" alt="menu" />
+						</td>
+					</tr>
+				</table>
+			</nav>
+            <div id="contactFlex">
+                <div id="cfFlex1">
+                    <div class="blur" style="left: 250%; top: 70%;"></div>
+
+                    <h2 class="purpleLight">Get in touch</h2>
+                    <p>Contact Information</p>
+                    <p>27,Alara Street Yaba 100012 Lagos State</p>
+                    <p>Call Us : 07067981819</p>
+                    <p>we are open from Monday-Friday 08:00am - 05:00pm</p>
+                    <h3 class="purpleLight" style="margin-top: 3em;">Share on</h3>
+                    <table id="followUsTable" style="width: 50%;">
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-brands fa-instagram"></i></td>
+                                <td><i class="fa-brands fa-x-twitter"></i></td>
+                                <td><i class="fa-brands fa-facebook-f"></i></td>
+                                <td><i class="fa-brands fa-linkedin-in"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="cfFlex2">
+                    <img class="star starPu" src="images/star pu.png" style="" alt="" />
+
+                    <div>
+                        <h2 class="purpleLight">Questions or need assistance?<br />Let us know about it</h2>
+                        <p>Email us below to any question related to our event</p>
+
+                        <input type="text" id="name" placeholder="Team's Name" />
+                        <input type="text" id="topic" placeholder="Topic" />
+                        <input type="email" id="email" placeholder="Email" />
+                        <textarea id="message" placeholder="Message"></textarea>
+                        <div><button class="register" style="padding: 1em 2em;">Submit</button></div>
+
+                        <div id="cff1social">
+                            <h3 class="purpleLight" style="text-align: center; margin-top: 5em;">Share on</h3>
+                            <table id="followUsTable" style="width: 50%; margin: auto; margin-bottom: 3em;">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa-brands fa-instagram"></i></td>
+                                        <td><i class="fa-brands fa-x-twitter"></i></td>
+                                        <td><i class="fa-brands fa-facebook-f"></i></td>
+                                        <td><i class="fa-brands fa-linkedin-in"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+
+			<img class="star starPu" id="kjl" src="images/star pu.png" alt="" />
+			<img class="star starWhite" src="images/star.png" style="top: 80%; right: 5%; left: auto;" alt="" />
+			<img class="star starGray" src="images/star gray.png" style="top: 15%; right: 15%; animation-delay: 1.5s" alt="" />
+
+			<div class="blur" style="left: 10%; top: 30%;"></div>
+
+		</div>
+
+		<script>
+			jQuery(document).ready(function ($) {
+				if ($('html, body').width() >= 1024) {
+					$('#name').attr('placeholder', 'First Name')
+					$('#email').attr('placeholder', 'Mail')
+				}
+
+				$('div .register').click(function() {
+					var settings = {
+						"url": "https://backend.getlinked.ai/hackathon/contact-form",
+						"method": "POST",
+						"timeout": 0,
+						"headers": {
+						  "Content-Type": "application/json"
+						},
+						"data": JSON.stringify({
+						  	"email": $('#email').val(),
+						  	"phone_number": '',
+						  	"first_name": $('#name').val(),
+						  	"message": $('#message').val()
+						}),
+					};
+
+					$.ajax(settings).done(function (response) {
+						console.log(response.id);
+					});
+				});
+					
+            });
+		</script>
+	</body>
+</html>

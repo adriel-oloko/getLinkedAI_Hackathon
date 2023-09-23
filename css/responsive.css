@@ -1,0 +1,134 @@
+@media only screen and (min-width: 375px) {
+    
+}
+
+@media only screen and (min-width: 512px) {
+    
+}
+
+@media only screen and (max-width: 912px) {
+    /*1023*/
+
+    #landing {
+        background-size: 100%;
+    }
+    #registerContainer {text-align: center;}
+    #headerText, #navButton {display: none;}
+    #navTable #menu {display: table-cell; text-align: right;}
+    #navTable #menu img {transform: scale(1.2);}
+    #hero { top: 23%; width: 80%; left: 0; right: 0; margin: auto;}
+    #hero h1 {font-size: 250%;}
+    #hero * { text-align: center;}
+
+    #hero p{margin: auto;}
+    button.register {margin-top: 1em;}
+
+    #countdown {
+        margin: auto;
+        margin-top: 25%;
+        transform: scale(1.3);
+    }
+    h1#headerIgniting {font-size: 16px;}
+    img#v4 {width: 30%;}
+
+    .flex1, .flex2 {flex: 100%; width: 100%; text-align: center;}
+    .break {display: block;}
+    #theBigIdea p {margin: auto; width: 80%;}
+    .container {}
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #theBigIdea .flex1 img {transform: scale(1.3);}
+    #theBigIdea .flexContainer .flex2 {padding-top: 4em;}
+
+    .tlM {display: none;}
+    .tlD {display: table-cell;}
+
+    #timelineLine td {width: 40%;}
+    #timelineLine td:nth-child(2) {width: 20%;}
+    #timelineLine td:nth-child(3) {width: 40%;}
+    #timelineLine td div {position: relative; height: 7em; width: 4px;}
+    #timelineLine .tlCount {margin-top: .5em;}
+
+    .lineTd {column-span: all; position: relative;}
+    .lineTd div {height: 50px;}
+
+    #timelineLine .tlD {vertical-align: bottom; border-bottom: 1.5em solid transparent;}
+    #timelineLine .tlD * {text-align: right;}
+
+    #timelineLine .even td:nth-of-type(3) {vertical-align: bottom; border-bottom: 0;}
+    #timelineLine .even .tlD {vertical-align: bottom; border-bottom: 0;}
+    #timelineLine .even .tlD h3 {margin-bottom: .3em;}
+
+    #timelineLine .odd div {margin-top: 1em;}
+
+    .trM {display: none;}
+    .trD div {display: block;}
+
+    #parHeader {
+        width: 50%;
+        position: relative;
+        left: 25%;
+        text-align: left;
+    }
+
+    #faq {padding-bottom: 8em;}
+
+    #faq .flexContainer {flex-direction: row-reverse;}
+    #faq .flex1, #faq .flex2 {flex: 50%; width: 50%; text-align: center;}
+    #faq .flex1 {transform: scale(1.3) translateX(10%);}
+
+    #tfcFlex1 {flex: 100%;}
+    #tfcFlex2 {flex: 40%;}
+    #tfcFlex3 {flex: 60%;}
+
+    #tfcFlex2 img {
+        transform: scale(1.2) translateY(-20%);
+    }
+    .medalContainer h3 {font-size: 18px; font-weight: 600;}
+    .medalContainer h3.purpleLight {font-size: 20px; font-weight: 700; padding-bottom: 1em;}
+
+    #pas p {width: 50%;}
+    #pas #yorkieLine {width: 95%;}
+
+    #ppat {padding-bottom: 10%;}
+    #ppat .flex1, #ppat .flex2 {flex: 40%; width: 60%;}
+    #ppat .flex1 {transform: scale(.8) translateY(-10%); margin-top: 0;}
+    #ppat .flexContainer {flex-direction: row-reverse;}
+    #ppat * {text-align: left;}
+    #ppat #raga2 {margin: 0;}
+    #ppat #raga2 div {text-align: center;}
+
+    .footerFlex:nth-of-type(1) {flex: 50%; flex: 50%;}
+    .footerFlex:nth-of-type(1) p {width: 80%;}
+    .footerFlex {flex: 25%; width: 25%;}
+
+    #hero .starWhite {top: -10%; left: 10%; width: 20px;}
+    .xx {display: block;}
+    .yy {display: none;}
+}
+
+@media only screen and (min-width: 1280px) {
+    #hero {
+        transform: scale(1.2);
+        left: 15%;
+    }
+    h1#headerIgniting {font-size: 28px;}
+    img#v4 {width: 16%;}
+}
+
+
+@media only screen and (max-width: 376px) {
+    
+}
+
+@media only screen and (max-width: 512px) {
+}
+
+
+
+::-webkit-scrollbar {display: none;}
+*::-webkit-scrollbar-thumb {
+    background-color: blue;
+}

@@ -1,0 +1,66 @@
+#landing nav {border-bottom: 0;}
+#landing {background-image: none;}
+
+#navTable {display: none;}
+
+
+#contactFlex {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+}
+
+#contactFlex div{ color: #fff; position: relative;}
+
+#cfFlex1 {display: none;}
+#cfFlex2 p {width: 80%; margin-bottom: 2em; text-align: left;}
+#cfFlex2 h2 {text-align: left;}
+#cfFlex2 div {text-align: center;}
+#cfFlex2 .starPu {left: -5%; top: 60%;}
+#followUsTable td i {margin: 0;}
+input, textarea {
+    width: 100%;
+    padding: 5% 10%;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: large;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+#kjl {
+    left: 50%; top: 5%;
+}
+
+textarea {height: 10em;}
+::placeholder {color: #fff; opacity: 1; content: 'ghghg';}
+::-ms-input-placeholder {color: #fff;}
+
+@media only screen and (min-width: 1024px) {
+    #navTable {display: table;}
+
+    #cfFlex1, #cfFlex2 {display: block;}
+    #cfFlex1 {flex: 40%; width: 40%; padding-right: 5%;}
+    #cfFlex2 {flex: 55%; width: 55%;}
+    #cfFlex2 {
+        background-color: #ffffff30;
+        border-radius: 12px;
+    }
+    #cfFlex2 div {
+        transform: scale(70%) translateY(-10%);
+        height: 650px;
+    }
+    .circle, #cff1social {display: none;}
+    #cfFlex2 .register {transform: scale(2);}
+
+    #kjl {
+        left: 10%; top: 25%;
+    }
+    #topic {display: none;}
+}
