@@ -5,9 +5,6 @@
 		<meta charset="utf-8" />
 
         <script src="https://kit.fontawesome.com/8e616065cd.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
 
 		<link type="text/css" rel="stylesheet" href="css/reset.css" />
 		<link type="text/css" rel="stylesheet" href="css/general.css" />
@@ -15,11 +12,6 @@
         <link type="text/css" rel="stylesheet" href="css/responsive.css" />
 
         <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
-        <style>
-            #nav div:nth-of-type(1) {border-color: #011627;}
-            #nav div:nth-of-type(1) ion-icon {color: #011627;}
-
-        </style>
         <title>getLinkedAI - Home</title>
     </head>
     <body>
@@ -28,27 +20,27 @@
                 <table id="navTable">
                     <tr>
                         <td id="navLogo"><h1><span>get</span><span class="purpleLight">linked</span></h1></td>
-                         
+
                         <td id="headerText"><span><a href="#timeline">Timeline</a></span></td>
 						<td id="headerText"><span><a href="#">Overview</a></span></td>
 						<td id="headerText"><span><a href="#faq">FAQs</a></span></td>
-						<td id="headerText"><span><a href="contact.html">Contact</a></span></td>
+						<td id="headerText"><span><a href="contact">Contact</a></span></td>
 
-                        <td id="navButton"><button class="register"><a href="register.html">Register</a></button></td>
+                        <td id="navButton"><button class="register"><a href="register">Register</a></button></td>
                         <td id="menu"><img src="images/Vector.svg" alt="menu"/></td>
                     </tr>
                 </table>
             </nav>
 
             <h1 id="headerIgniting"><i>Igniting a Revolution in HR Innovation</i><img id="v4" src="images/Vector 4.png" alt=""></h1>
-            
+
 
             <div id="hero">
                 <h1 id="hero1">getlinked Tech<img src="images/Creative 1.png" style="width: 40px; position: absolute; top: -1.2em; right: 5%;" alt=""></h1>
                 <h1 id="hero2">Hackathon <span style="color: #d434fe; position: relative;">1.0 <img src="images/chain-9365116-7621444.png" style="width: 40px;" alt=""><img src="images/1f4a5.png" style="width: 40px; left: 14px;" alt=""></span></h1>
                 <p>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
 
-                <div id="registerContainer"><button class="register"><a href="register.html">Register</a></button></div>
+                <div id="registerContainer"><button class="register"><a href="register">Register</a></button></div>
                 <table id="countdown">
                     <tbody>
                         <tr>
@@ -72,8 +64,8 @@
             <p><a href="#timeline">Timeline</a></p>
             <p><span><a href="#">Overview</a></p>
             <p><a href="#faq">FAQs</a></p>
-            <p><a href="contact.html">Contact</a></p>
-            <button class="register" style="left: 15%; position: relative;"><a href="register.html">Register</a></button>
+            <p><a href="contact">Contact</a></p>
+            <button class="register" style="left: 15%; position: relative;"><a href="register">Register</a></button>
         </div>
 
         <div id="theBigIdea" class="container">
@@ -183,7 +175,7 @@
             <div style="width: 80%; margin: auto;">
             <h2>Timeline</h2>
             <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
-            
+
             <img class="star starPu" src="images/star pu.png" style="top: 7%; left: 15%; width: 20px; animation-delay: 2s; animation-duration: 4s;" alt="">
             <img class="star starWhite" src="images/star.png" style="top: 50%; left: auto; right: 10%; width: 15px;" alt="">
             <img class="star starGray" src="images/star gray.png" style="top: auto; bottom: 1%; left: 15%; width: 15px; animation-delay: 1.5s;" alt="">
@@ -368,7 +360,7 @@
                     <p>Below are our privacy & policy, which outline a lot of goodies. it's our aim to always take of our participant</p>
                     <div id="raga2">
                         <p id="ekelebe">At getlinked tech Hackathon 1.0, we value your privacy and are committed to protecting your personal information.This Privacy Policy outlines how we collect,use, disclose, and safeguard your data when you participate in our tech hackathon event. By participating in our event, you consent to the practices described in this policy.</p>
-                        
+
                         <h4 class="purpleLight">Licensing Policy</h4>
                         <p style="font-weight: 600;">Here are terms of our Standard License:</p>
                         <table id="ppatTable">
@@ -388,7 +380,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer id="ffx" class="container">
             <img class="star starWhite" src="images/star.png" style="top: 40%; left: 60%; width: 15px; animation-delay: 1.5s;" alt="">
 
@@ -405,7 +397,7 @@
                     <p><a href="#">Overview</a></p>
                     <p><a href="#timeline">Timeline</a></p>
                     <p><a href="#faq">FAQs</a></p>
-                    <p><a href="register.html">register</a></p>
+                    <p><a href="register">register</a></p>
                     <table id="followUsTable">
                         <tbody>
                             <tr>
@@ -480,6 +472,10 @@
                     }
                 }, 1000);
 
+                $('a').click(function() {
+                    $('#navbar').css('display', 'none')
+                    $('#navbar').css('opacity', '0')
+                })
                 $('#menu img').click(function() {
                     $('#navbar').css('display', 'block');
                     $('#navbar').animate({opacity: '1'}, 'slow')
@@ -499,7 +495,7 @@
                       var windowHeight = window.innerHeight;
                       var elementTop = reveals[i].getBoundingClientRect().top;
                       var elementVisible = 150;
-                    
+
                       if (elementTop < windowHeight - elementVisible) {
                         reveals[i].classList.add("active");
                       } else {
